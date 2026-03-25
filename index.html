@@ -258,6 +258,37 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
   }
+  .tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  font-size: 14px;
+  transition: all 0.3s ease;
+
+}
+
+/* SVG icons */
+.tech-badge img {
+  width: 18px;
+  height: 18px;
+}
+
+/* 🔥 Hover animation */
+.tech-badge:hover {
+  transform: translateY(-4px) scale(1.05);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 20px rgba(0, 255, 200, 0.2);
+}
 
   @keyframes morph {
     0%, 100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
@@ -821,15 +852,53 @@
     <div class="project-card fade-up">
       <div class="project-num">01</div>
       <span class="project-tag">Featured</span>
-      <h3 class="project-title">Design System & Component Library</h3>
-      <p class="project-desc">Built a scalable, themeable design system from scratch with 60+ components, full accessibility support, and comprehensive Storybook documentation used across 5 products.</p>
-      <div class="tech-stack">
+      <h3 class="project-title">AI Resume Parser & Generator with ATS Insights</h3>
+      <p class="project-desc">AI-powered resume builder that leverages generative AI to create tailored resumes and cover letters from user input and job descriptions. Implements intelligent content optimization, keyword analysis, and ATS scoring with dynamic visual feedback, delivered through a modern, interactive full-stack application.</p>
+      <!-- <div class="tech-stack">
         <span class="tech-badge">React</span>
         <span class="tech-badge">TypeScript</span>
         <span class="tech-badge">Storybook</span>
         <span class="tech-badge">CSS Variables</span>
-      </div>
-      <a href="#" class="project-link">View Project</a>
+      </div> -->
+      <div class="tech-stack">
+
+  <span class="tech-badge">
+    <img src="https://skillicons.dev/icons?i=react" alt="React" />
+    React
+  </span>
+
+  <span class="tech-badge">
+    <img src="https://skillicons.dev/icons?i=vite" alt="Vite" />
+    Vite
+  </span>
+
+  <span class="tech-badge">
+    <img src="https://skillicons.dev/icons?i=nodejs" alt="Node" />
+    Node.js
+  </span>
+
+  <span class="tech-badge">
+    <img src="https://skillicons.dev/icons?i=express" alt="Express" />
+    Express
+  </span>
+
+  <span class="tech-badge">
+    <img src="https://skillicons.dev/icons?i=js" alt="JS" />
+    JavaScript
+  </span>
+
+  <span class="tech-badge">
+    <img src="https://skillicons.dev/icons?i=css" alt="CSS" />
+    CSS
+  </span>
+
+  <span class="tech-badge">
+    🤖 Gemini AI
+  </span>
+
+ 
+</div>
+      <a href="https://sainilesh2608.github.io/ai-resume-builder/" class="project-link">View Project</a>
     </div>
 
     <div class="project-card fade-up">
